@@ -24,6 +24,7 @@
 
     <main>
         <h2>Get in Touch</h2>
+
         <form action="mailto:amammadli17928@ada.edu.az" method="post" enctype="text/plain">
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="Name" required><br><br>
@@ -31,11 +32,8 @@
             <label for="email">Email:</label><br>
             <input type="email" id="email" name="Email" required><br><br>
 
-            <label>Preferred Contact Method:</label><br>
-            <input type="radio" id="contact_email" name="ContactMethod" value="Email" checked>
-            <label for="contact_email">Email</label>
-            <input type="radio" id="contact_phone" name="ContactMethod" value="Phone">
-            <label for="contact_phone">Phone</label><br><br>
+            <label for="phone">Phone Number (optional):</label><br>
+            <input type="tel" id="phone" name="Phone" placeholder="Type phone number if needed"><br><br>
 
             <label for="reason">Reason for Contact:</label><br>
             <select id="reason" name="Reason">
@@ -47,7 +45,7 @@
             <label for="message">Message:</label><br>
             <textarea id="message" name="Message" rows="6" cols="40" placeholder="Write your message..."></textarea><br><br>
 
-            <button type="submit">Send</button>
+            <button type="submit">Send Email</button>
         </form>
     </main>
 
