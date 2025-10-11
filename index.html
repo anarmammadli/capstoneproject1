@@ -6,6 +6,10 @@
     <meta name="description" content="Home page of Anar Mammadli, IT student interested in web development.">
     <meta name="author" content="Anar Mammadli">
     <link rel="icon" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Home - Anar Mammadli</title>
 </head>
 <body>
@@ -13,28 +17,34 @@
     <header>
         <h1>Hi, I'm Anar 👋</h1>
         <p>Student of IT, curious about web development and software engineering.</p>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="education.html">Education</a> |
-            <a href="schedule.html">Weekly Schedule</a> |
-            <a href="contact.html">Contact Me</a> |
-            <a href="questionnaire.html">Questionnaire</a> |
-            <a href="https://www.ada.edu.az/" target="_blank">ADA University</a>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="education.html" class="nav-link">Education</a>
+            <a href="schedule.html" class="nav-link">Weekly Schedule</a>
+            <a href="gallery.html" class="nav-link">Gallery</a>
+            <a href="contact.html" class="nav-link">Contact Me</a>
+            <a href="questionnaire.html" class="nav-link">Questionnaire</a>
+            <a href="https://www.ada.edu.az/" target="_blank" class="nav-link external-link">ADA University</a>
         </nav>
     </header>
 
-    <main>
-        <section>
+    <main id="index-main">
+        <section class="profile-section">
             <h2>About Me</h2>
+            <div class="profile-img-container">
+                <img src="images/profile.jpg" alt="Profile picture of Anar Mammadli" class="profile-img">
+            </div>
             <p>I study at ADA University and enjoy building web apps and exploring new technologies. Here are a few things I like:</p>
             <ul>
                 <li>Learning web development (HTML, CSS, JavaScript)</li>
                 <li>Working on small C# desktop tools</li>
                 <li>Reading and playing football ⚽</li>
             </ul>
+            <div style="clear: both;"></div> 
         </section>
 
         <section>
+            <hr>
             <h2>Quick Links & Resources</h2>
             <ol>
                 <li><a href="education.html">My education history</a></li>
@@ -44,10 +54,8 @@
 
         <section>
             <h2>Images</h2>
-            <p>Profile picture:</p>
-            <img src="images/profile.jpg" alt="Profile picture of Anar Mammadli" width="180" class="profile-img">
             <p>Hobby image:</p>
-            <img src="images/hobby.jpg" alt="Hobby image" width="240">
+            <img src="images/hobby.jpg" alt="Hobby image" style="width: 240px; height: auto;">
         </section>
     </main>
 
